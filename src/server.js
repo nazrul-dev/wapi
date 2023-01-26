@@ -1,7 +1,7 @@
-const dotenv = require('dotenv')
+
 const mongoose = require('mongoose')
 const logger = require('pino')()
-dotenv.config()
+const dotenv = require('dotenv').config();
 
 const app = require('./config/express')
 const config = require('./config/config')

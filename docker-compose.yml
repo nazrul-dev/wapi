@@ -28,9 +28,8 @@ services:
             - WEBHOOK_URL=${WEBHOOK_URL}
             - WEBHOOK_BASE64=${WEBHOOK_BASE64}
         volumes:
-            - ./:/home/node/app
-        working_dir: /home/node/app
-        image: node:17.2.0-alpine
+            - ./:/apps
+        build: .
 
 volumes:
     db:
